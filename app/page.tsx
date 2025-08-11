@@ -7,13 +7,18 @@ export default function HomePage() {
       
       <p>This is my portfolio, blog, and personal website.</p>
       
-      <h2>Examples</h2>
+      <h2>Articles récents</h2>
       
       <ul>
-        <li><a href="/n/1">5 Tiny CLI Tricks You (Probably) Didn't Know</a></li>
-        <li><a href="/n/2">6 Sneaky JavaScript Patterns to Cut Boilerplate</a></li>
-        <li><a href="/n/3">6 CSS Patterns to Cut Boilerplate</a></li>
-        <li><a href="/n/4">Example without MDX</a></li>
+        <li><a href="/articles/cli-tricks">5 Tiny CLI Tricks You (Probably) Didn't Know</a></li>
+        <li><a href="/articles/javascript-patterns">6 Sneaky JavaScript Patterns to Cut Boilerplate</a></li>
+        <li><a href="/articles/css-patterns">6 CSS Patterns to Cut Boilerplate</a></li>
+      </ul>
+      
+      <h2>Tutoriels</h2>
+      
+      <ul>
+        <li><a href="/tutorials/nextjs-optimization">Optimisation des performances avec Next.js</a></li>
       </ul>
       
       <h2>Features</h2>

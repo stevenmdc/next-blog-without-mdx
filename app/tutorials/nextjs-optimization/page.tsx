@@ -1,7 +1,6 @@
 import React from 'react';
 import { highlight } from 'sugar-high';
 
-// Composants MDX réutilisés
 const components = {
   h1: (props: React.ComponentPropsWithoutRef<'h1'>) => (
     <h1 className="font-medium pt-12 mb-0" {...props} />
@@ -67,7 +66,6 @@ const components = {
   ),
 };
 
-// Composant pour les blocs de code
 const CodeBlock = ({ children, language }: { children: string; language?: string }) => {
   const codeHTML = highlight(children);
   return (
@@ -82,7 +80,7 @@ const CodeBlock = ({ children, language }: { children: string; language?: string
   );
 };
 
-const ExampleWithoutMDX = () => {
+export default function NextJSOptimizationTutorial() {
   return (
     <article className="max-w-4xl mx-auto px-6 py-8">
       <components.h1>
@@ -324,5 +322,3 @@ export default async function ProductPage({ params }: Props) {
     </article>
   );
 };
-
-export default ExampleWithoutMDX;

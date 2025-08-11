@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: '6 Sneaky JavaScript Patterns to Cut Boilerplate',
   alternates: {
-    canonical: '/n/2',
+    canonical: '/articles/javascript-patterns',
   },
 };
 

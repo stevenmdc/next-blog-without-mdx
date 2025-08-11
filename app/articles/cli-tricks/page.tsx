@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: "5 Tiny CLI Tricks You (Probably) Didn't Know",
   alternates: {
-    canonical: '/n/1',
+    canonical: '/articles/cli-tricks',
   },
 };
 

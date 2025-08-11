@@ -3,7 +3,9 @@
     "allow": [
       "Bash(yarn remove:*)",
       "Bash(rm:*)",
-      "Bash(yarn build)"
+      "Bash(yarn build)",
+      "Bash(mkdir:*)",
+      "Bash(yarn add @heroicons/react)"
     ],
     "deny": []
   }
