@@ -13,6 +13,7 @@ export default function HomePage() {
         <li><a href="/n/1">5 Tiny CLI Tricks You (Probably) Didn't Know</a></li>
         <li><a href="/n/2">6 Sneaky JavaScript Patterns to Cut Boilerplate</a></li>
         <li><a href="/n/3">6 CSS Patterns to Cut Boilerplate</a></li>
+        <li><a href="/n/4">Example without MDX</a></li>
       </ul>
       
       <h2>Features</h2>
