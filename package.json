@@ -6,6 +6,26 @@
     "start": "next start",
     "delete": "rm -rf app/n"
   },
+  "eslintConfig": {
+    "extends": [
+      "next/core-web-vitals",
+      "plugin:prettier/recommended"
+    ]
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,yml,css}": [
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.8",
     "@vercel/analytics": "^1.5.0",
