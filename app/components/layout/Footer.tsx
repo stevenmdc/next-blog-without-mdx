@@ -39,12 +39,12 @@ export default function Footer() {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group text-gray-400 dark:text-gray-500 hover:text-blue-500 dark:hover:text-blue-400 transition-all duration-200 hover:scale-105"
+              className="group font-semibold text-gray-400 dark:text-gray-500 hover:text-blue-500 transition-all duration-200 "
               aria-label={link.ariaLabel}
             >
               <span className="sr-only">{link.name}</span>
               {link.handle}
-              <span className="group-hover:opacity-100 opacity-0 transition-opacity duration-200 ml-1">↗</span>
+              <span className="group-hover:opacity-100 font-light opacity-0 transition-opacity duration-200 ml-1">↗</span>
             </a>
           ))}
         </div>

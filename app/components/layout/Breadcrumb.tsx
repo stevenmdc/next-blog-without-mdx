@@ -40,7 +40,7 @@ export default function Breadcrumb() {
   });
 
   return (
-    <nav className="flex mb-6" aria-label="Breadcrumb">
+    <nav className="flex mb-8" aria-label="Breadcrumb">
       <ol className="flex items-center space-x-2">
         {breadcrumbItems.map((item, index) => (
           <li key={item.href}>
