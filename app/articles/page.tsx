@@ -18,6 +18,12 @@ const articles = [
     description: "Micro-optimizations and quality-of-life hacks to keep your styles tight, maintainable, and future-proof.",
     href: "/articles/css-patterns",
     date: "2025-01-05"
+  },
+  {
+    title: "Optimisation des performances avec Next.js : Guide complet",
+    description: "Next.js offre de nombreuses fonctionnalités pour optimiser les performances de vos applications React. Découvrez les techniques essentielles pour créer des applications rapides et efficaces.",
+    href: "/articles/nextjs-optimization",
+    date: "2025-01-01"
   }
 ];
 
