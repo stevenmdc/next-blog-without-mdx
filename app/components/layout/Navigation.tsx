@@ -17,6 +17,8 @@ const navItems = [
   ]},
   { name: 'Projects', href: '/projects', children: [
   ]},
+  { name: 'About', href: '/about', children: [
+  ]},
 ];
 
 export default function Navigation({ className = '' }: NavigationProps) {

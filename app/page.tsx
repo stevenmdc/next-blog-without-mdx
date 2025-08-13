@@ -28,7 +28,6 @@ export default function HomePage() {
       </p>
       <div className="mt-8">
         <h2 className="font-semibold">Selected Projects</h2>
-        {/* This section is dynamically populated with projects */}
         <SelectedProjects />
       </div>
       <div className="mt-8">

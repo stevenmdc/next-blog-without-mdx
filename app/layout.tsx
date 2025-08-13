@@ -2,7 +2,6 @@
 import './globals.css'
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
-import Breadcrumb from './components/ui/Breadcrumb'
 import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
 
@@ -12,7 +11,6 @@ const inter = Inter({
   variable: '--font-inter',
 })
 
-// Métadonnées étendues pour un meilleur SEO
 export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL || 'https://next-mdx-blog.vercel.app'
@@ -107,7 +105,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <div className="min-h-screen flex flex-col justify-between">
           <div className="max-w-screen-sm mx-auto w-full flex-1 px-4 pt-6 pb-8">
             <Header />
-            <Breadcrumb />
             <main className="space-y-6" role="main">
               {children}
             </main>

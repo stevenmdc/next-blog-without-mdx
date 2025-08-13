@@ -1,3 +1,4 @@
+// app/articles/page.tsx
 import Link from 'next/link';
 
 const articles = [
