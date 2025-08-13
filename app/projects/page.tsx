@@ -7,9 +7,18 @@ export default function ProjectsPage() {
       <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
         Projets
       </h1>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-        Découvrez mes projets récents, des applications web aux outils open
-        source. Chaque projet est une opportunité d'apprendre et de partager.
+      <p className="text-base text-gray-600 dark:text-gray-300 mb-6">
+        Découvrez mes projets les plus récents : des templates open-source
+        gratuits, et des applications web, des composants tailwind CSS
+        réutilisables.
+      </p>
+      <p className="text-base text-gray-600 dark:text-gray-300 mb-6">
+        Chaque initiative est conçue pour inspirer les autres dans leur
+        apprentissage de Nextjs, et ainsi favoriser le partage de connaissances
+        avec les autres, et élever ainsi ensemble la communauté vers le haut.
+      </p>
+      <p className="text-base text-gray-600 dark:text-gray-300 mb-6">
+        Vous pouvez les utiliser dans vos projets personnels ou professionnels.
       </p>
       <SelectedProjects />
     </div>

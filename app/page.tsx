@@ -33,7 +33,7 @@ export default function HomePage() {
       <div className="mt-8">
         <h2 className="font-semibold">Articles récents</h2>
 
-        <ul className="space-y-3  text-neutral-400">
+        <ul className="space-y-3 mt-2 text-neutral-400">
           <li className="p-4 rounded-md hover:bg-neutral-400/20 hover:text-white">
             <a href="/articles/cli-tricks">
               • 5 Tiny CLI Tricks You (Probably) Didn't Know
@@ -101,11 +101,11 @@ export default function HomePage() {
           <li>
             feel free to reach out via email at{' '}
             <a
-              href="mailto:johnsmith@gmail.com"
+              href="mailto:youremail@gmail.com"
               className="hover:underline hover:text-blue-500"
               aria-label="Envoyez-moi un e-mail"
             >
-              johnsmith@gmail.com
+              youremail@gmail.com
             </a>
           </li>
           <li>

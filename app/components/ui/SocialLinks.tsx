@@ -26,7 +26,7 @@ export function SocialLinks() {
     },
   ]
   return (
-    <div className="flex space-x-6 tracking-tight mb-4">
+    <div className="sm:flex space-x-0 tracking-tight sm:space-x-3">
       {socialLinks.map((link) => (
         <a
           key={link.name}

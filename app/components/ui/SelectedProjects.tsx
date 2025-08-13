@@ -2,16 +2,16 @@ import { ProjectCard } from './Card'
 
 const videoSources = [
   {
-    title: "Nim - Personal Website Template",
-    description: "A modern, responsive personal website template built with Next.js and TypeScript.",
-    thumbnailVideo: "/videos/nim-personal-website-template.mp4",
-    fullVideo: "/videos/nim-personal-website-template.mp4",
+    title: "Motion",
+    description: "A new way to craft motion website, faster.",
+    thumbnailVideo: "/videos/motion-ui-vd001.mp4",
+    fullVideo: "/videos/motion-ui-vd001.mp4",
   },
   {
-    title: "Nim - Personal Website Template 01",
-    description: "Enhanced version of the personal website template with additional features.",
-    thumbnailVideo: "/videos/nim-personal-website-template-01.mp4",
-    fullVideo: "/videos/nim-personal-website-template-01.mp4",
+    title: "Motion Pro",
+    description: "UI kit to make beautiful, animated interfaces with ease.",
+    thumbnailVideo: "/videos/motion-ui-vd002.mp4",
+    fullVideo: "/videos/motion-ui-vd002.mp4",
   },
 ]
 
