@@ -18,10 +18,11 @@ export default function ArticlesLayout({
     <div className="articles-section">
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Articles</h1>
-        <p className="text-lg text-gray-600 dark:text-gray-300">
+        <p className="text-base text-gray-600 dark:text-gray-300">
           Conseils pratiques et astuces pour améliorer votre workflow de développement
         </p>
       </div>
+      <hr className="border-gray-200 dark:border-gray-700 mb-8" />
       {children}
     </div>
   );

@@ -4,14 +4,14 @@ const videoSources = [
   {
     title: "Motion",
     description: "A new way to craft motion website, faster.",
-    thumbnailVideo: "/videos/motion-ui-vd001.mp4",
-    fullVideo: "/videos/motion-ui-vd001.mp4",
+    thumbnailVideo: "/videos/motion-ui-vd002.mp4",
+    fullVideo: "/videos/motion-ui-vd002.mp4",
   },
   {
     title: "Motion Pro",
     description: "UI kit to make beautiful, animated interfaces with ease.",
-    thumbnailVideo: "/videos/motion-ui-vd002.mp4",
-    fullVideo: "/videos/motion-ui-vd002.mp4",
+    thumbnailVideo: "/videos/motion-ui-vd001.mp4",
+    fullVideo: "/videos/motion-ui-vd001.mp4",
   },
 ]
 

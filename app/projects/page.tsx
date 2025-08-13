@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { SelectedProjects } from '../components/ui/SelectedProjects'
 
 export default function ProjectsPage() {

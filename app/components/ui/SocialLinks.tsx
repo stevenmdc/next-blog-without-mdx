@@ -3,25 +3,25 @@ export function SocialLinks() {
     {
       name: 'Twitter',
       handle: '@johnsmith',
-      url: 'https://x.com/johnsmith',
+      url: 'https://x.com/stevenmadec',
       ariaLabel: 'Suivez-moi sur Twitter',
     },
     {
       name: 'YouTube',
       handle: 'youtube',
-      url: 'https://www.youtube.com/@johnsmith',
+      url: 'https://www.youtube.com/@steven-madec',
       ariaLabel: 'Visitez ma chaîne YouTube',
     },
     {
       name: 'LinkedIn',
       handle: 'linkedin',
-      url: 'https://www.linkedin.com/in/johnsmith',
+      url: 'https://www.linkedin.com/in/stevenmadec',
       ariaLabel: 'Connectons-nous sur LinkedIn',
     },
     {
       name: 'GitHub',
       handle: 'github',
-      url: 'https://github.com/johnsmith',
+      url: 'https://github.com/stevenmdc',
       ariaLabel: 'Voir mes projets sur GitHub',
     },
   ]
