@@ -25,10 +25,10 @@
       ]
     },
     {
-      "name": "Tutoriels",
-      "short_name": "Tutos",
-      "description": "Parcourir les tutoriels",
-      "url": "/tutorials",
+      "name": "Projects",
+      "short_name": "Projets",
+      "description": "Parcourir les projets",
+      "url": "/Projects",
       "icons": [
         {
           "src": "/icons/android-chrome-192x192.png",

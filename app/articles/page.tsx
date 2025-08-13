@@ -1,5 +1,6 @@
 // app/articles/page.tsx
 import Link from 'next/link';
+import { title } from 'process';
 
 const articles = [
   {
@@ -25,7 +26,13 @@ const articles = [
     description: "Next.js offre de nombreuses fonctionnalités pour optimiser les performances de vos applications React. Découvrez les techniques essentielles pour créer des applications rapides et efficaces.",
     href: "/articles/nextjs-optimization",
     date: "2025-01-01"
-  }
+  },
+  {
+    title: "Usefuls Git Commands",
+    description: "A collection of useful Git commands to enhance your workflow and productivity.",
+    href: "/articles/usefuls-git-cmd",
+    date: "2025-08-08"
+  },
 ];
 
 export default function ArticlesPage() {
