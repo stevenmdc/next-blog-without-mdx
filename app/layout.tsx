@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     'portfolio',
     'blog',
   ],
-  authors: [{ name: 'John Smith', url: 'https://github.com/johnsmith' }],
+  authors: [{ name: 'John', url: 'https://github.com/johnsmith' }],
   creator: 'John Smith',
   publisher: 'John Smith',
   robots: {
@@ -53,11 +53,11 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     url: '/',
     title: 'John Smith - Développeur Full Stack',
-    description: 'Portfolio et blog technique de John Smith',
+    description: 'Nextjs Blog Portfolio de John Smith',
     siteName: 'John Smith',
     images: [
       {
-        url: '/og-image.jpg', // À créer
+        url: '/screenshots/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'John Smith - Développeur Full Stack',
