@@ -12,7 +12,7 @@ export default function Error({ error, reset }: ErrorPageProps) {
         <h2 className="text-2xl font-bold text-red-600 mb-4">
           Something went wrong!
         </h2>
-        <p className="text-gray-600 mb-6 max-w-md">
+        <p className="text-neutral-400 mb-6 max-w-md">
           {error.message || "An unexpected error occurred"}
         </p>
         <button 

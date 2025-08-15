@@ -1,37 +1,63 @@
+'use client'
+
+import { motion } from 'framer-motion'
 import { SocialLinks } from './components/ui/SocialLinks'
 import { SelectedProjects } from './components/ui/SelectedProjects'
+
+const fadeInUp = {
+  initial: { opacity: 0, y: 60 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.1, ase: "easein" }
+}
 
 export default function HomePage() {
   return (
     <div className='prose prose-neutral dark:prose-invert max-w-none'>
-      <h1 className='font-semibold'>Steven Madec</h1>
-
-      <br />
-
-      <p className='text-neutral-400'>
-        This is my portfolio, blog, and personal website.
-      </p>
-
-      <p className='text-neutral-400'>
-        I’m a software engineer based in San Francisco, CA. I love building
-        things that live on the internet.
+      <motion.div
+        initial="initial"
+        animate="animate"
+        variants={fadeInUp}
+        transition={{ delay: 0 }}
+      >
+        <h1 className='font-semibold'>Steven Madec</h1>
         <br />
-        I’m currently working at <a href='https://vercel.com'>Vercel</a> on the
-        <a
-          href='https://nextjs.org'
-          className='hover:underline hover:text-blue-500'>
-          {' '}
-          Next.js
-        </a>{' '}
-        team.
-      </p>
-      <div className='mt-8'>
+        <p className='text-neutral-400'>
+          This is my portfolio, blog, and personal website.
+        </p>
+        <p className='text-neutral-400'>
+          I'm a software engineer based in San Francisco, CA. I love building
+          things that live on the internet.
+          <br />
+          I'm currently working at <a href='https://vercel.com'>Vercel</a> on the
+          <a
+            href='https://nextjs.org'
+            className='hover:underline hover:text-blue-500'>
+            {' '}
+            Next.js
+          </a>{' '}
+          team.
+        </p>
+      </motion.div>
+
+      <motion.div
+        className='mt-8'
+        initial="initial"
+        animate="animate"
+        variants={fadeInUp}
+        transition={{ delay: 0.2 }}
+      >
         <h2 className='font-semibold'>Selected Projects</h2>
         <SelectedProjects />
-      </div>
-      <div className='mt-8'>
-        <h2 className='font-semibold'>Articles récents</h2>
+      </motion.div>
 
+      <motion.div
+        className='mt-8'
+        initial="initial"
+        animate="animate"
+        variants={fadeInUp}
+        transition={{ delay: 0.3 }}
+      >
+        <h2 className='font-semibold'>Articles récents</h2>
         <ul className='space-y-3 mt-2 text-neutral-400'>
           <li className='rounded-md hover:bg-neutral-400/20 hover:text-white'>
             <a href='/articles/cli-tricks' className='block p-4'>
@@ -54,20 +80,31 @@ export default function HomePage() {
             </a>
           </li>
         </ul>
-      </div>
+      </motion.div>
 
-      <div className='mt-8'>
+      <motion.div
+        className='mt-8'
+        initial="initial"
+        animate="animate"
+        variants={fadeInUp}
+        transition={{ delay: 0.4 }}
+      >
         <h2 className='font-semibold'>Stack</h2>
-
         <ul className='p-4 space-y-3 text-neutral-400'>
           <li>• Next.js / React</li>
           <li>• Tailwind CSS</li>
           <li>• TypeScript</li>
           <li>• Vercel</li>
         </ul>
-      </div>
+      </motion.div>
 
-      <div className='mt-8'>
+      <motion.div
+        className='mt-8'
+        initial="initial"
+        animate="animate"
+        variants={fadeInUp}
+        transition={{ delay: 0.5 }}
+      >
         <h2 className='font-semibold'>Code</h2>
         <ul className='space-y-3 p-4 text-neutral-400'>
           <li>
@@ -91,8 +128,15 @@ export default function HomePage() {
             </a>
           </li>
         </ul>
-      </div>
-      <div className='mt-8'>
+      </motion.div>
+
+      <motion.div
+        className='mt-8'
+        initial="initial"
+        animate="animate"
+        variants={fadeInUp}
+        transition={{ delay: 0.6 }}
+      >
         <h2 className='font-semibold'>Connect</h2>
         <ul className='space-y-3 p-4 text-neutral-400'>
           <li>
@@ -108,7 +152,7 @@ export default function HomePage() {
             <SocialLinks />
           </li>
         </ul>
-      </div>
+      </motion.div>
     </div>
   )
 }

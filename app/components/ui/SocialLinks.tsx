@@ -33,7 +33,7 @@ export function SocialLinks() {
           href={link.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="group font-semibold text-gray-400 dark:text-gray-500 hover:text-blue-500 transition-all duration-200"
+          className="group font-semibold text-neutral-400 dark:text-neutral-400 hover:text-blue-500 transition-all duration-200"
           aria-label={link.ariaLabel}
         >
           <span className="sr-only">{link.name}</span>

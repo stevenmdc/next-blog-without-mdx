@@ -1,6 +1,7 @@
 // app/articles/page.tsx
+'use client';
 import Link from 'next/link';
-import { title } from 'process';
+import { motion } from 'framer-motion';
 
 const articles = [
   {
@@ -33,24 +34,36 @@ const articles = [
     href: "/articles/usefuls-git-cmd",
     date: "2025-08-08"
   },
+  {
+    title: "Framer Motion Complete Guide",
+    description: "Master the art of animations in React with Framer Motion. Learn how to create stunning animations and transitions that enhance user experience.",
+    href: "/articles/framer-motion-guide",
+    date: "2025-08-15"
+  }
 ];
 
 export default function ArticlesPage() {
   return (
     <div className="space-y-8">
-      {articles.map((article) => (
-        <article key={article.href} className="border-b border-gray-200 dark:border-gray-700 pb-8 last:border-b-0">
+      {articles.map((article, index) => (
+        <motion.article 
+          key={article.href} 
+          className="border-b border-gray-200 dark:border-gray-700 pb-8 last:border-b-0"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: index * 0.1 }}
+        >
           <div className="space-y-3">
             <div className="space-y-2">
               <Link 
                 href={article.href}
                 className="block group"
               >
-                <h2 className="text-xl font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                <h2 className="text-xl font-semibold text-neutral-400 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                   {article.title}
                 </h2>
               </Link>
-              <time className="text-sm text-gray-500 dark:text-gray-400">
+              <time className="text-sm text-neutral-400 dark:text-neutral-400">
                 {new Date(article.date).toLocaleDateString('fr-FR', {
                   year: 'numeric',
                   month: 'long',
@@ -58,7 +71,7 @@ export default function ArticlesPage() {
                 })}
               </time>
             </div>
-            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+            <p className="text-neutral-400 dark:text-neutral-400 leading-relaxed">
               {article.description}
             </p>
             <Link 
@@ -68,7 +81,7 @@ export default function ArticlesPage() {
               Lire l'article →
             </Link>
           </div>
-        </article>
+        </motion.article>
       ))}
     </div>
   );

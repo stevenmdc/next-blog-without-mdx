@@ -7,22 +7,22 @@ const components = {
   ),
   h2: (props: React.ComponentPropsWithoutRef<'h2'>) => (
     <h2
-      className="text-gray-800 dark:text-zinc-200 font-medium mt-8 mb-3"
+      className="text-neutral-400 dark:text-zinc-200 font-medium mt-8 mb-3"
       {...props}
     />
   ),
   h3: (props: React.ComponentPropsWithoutRef<'h3'>) => (
     <h3
-      className="text-gray-800 dark:text-zinc-200 font-medium mt-8 mb-3"
+      className="text-neutral-400 dark:text-zinc-200 font-medium mt-8 mb-3"
       {...props}
     />
   ),
   p: (props: React.ComponentPropsWithoutRef<'p'>) => (
-    <p className="text-gray-800 dark:text-zinc-300 leading-snug" {...props} />
+    <p className="text-neutral-400 dark:text-zinc-300 leading-snug" {...props} />
   ),
   ul: (props: React.ComponentPropsWithoutRef<'ul'>) => (
     <ul
-      className="text-gray-800 dark:text-zinc-300 list-disc pl-5 space-y-1"
+      className="text-neutral-400 dark:text-zinc-300 list-disc pl-5 space-y-1"
       {...props}
     />
   ),
@@ -35,7 +35,7 @@ const components = {
   ),
   a: ({ href, children, ...props }: React.ComponentPropsWithoutRef<'a'>) => {
     const className =
-      'text-blue-500 hover:text-blue-700 dark:text-gray-400 hover:dark:text-gray-300 dark:underline dark:underline-offset-2 dark:decoration-gray-800';
+      'text-blue-500 hover:text-blue-700 dark:text-neutral-400 hover:dark:text-neutral-400 dark:underline dark:underline-offset-2 dark:decoration-gray-800';
     return (
       <a
         href={href}
@@ -60,7 +60,7 @@ const components = {
   },
   blockquote: (props: React.ComponentPropsWithoutRef<'blockquote'>) => (
     <blockquote
-      className="ml-[0.075em] border-l-3 border-gray-300 pl-4 text-gray-700 dark:border-zinc-600 dark:text-zinc-300"
+      className="ml-[0.075em] border-l-3 border-gray-300 pl-4 text-neutral-400 dark:border-zinc-600 dark:text-zinc-300"
       {...props}
     />
   ),
