@@ -1,7 +1,7 @@
 {
-  "name": "John Smith - Développeur Full Stack",
-  "short_name": "John Smith",
-  "description": "Portfolio et blog de John Smith, développeur full stack spécialisé en Next.js, React et TypeScript.",
+  "name": "Steven Madec - Développeur Full Stack",
+  "short_name": "Steven Madec",
+  "description": "Portfolio et blog de Steven Madec, développeur full stack spécialisé en Next.js, React et TypeScript.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

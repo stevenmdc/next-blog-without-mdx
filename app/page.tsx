@@ -4,7 +4,7 @@ import { SelectedProjects } from './components/ui/SelectedProjects'
 export default function HomePage() {
   return (
     <div className='prose prose-neutral dark:prose-invert max-w-none'>
-      <h1 className='font-semibold'>John Smith</h1>
+      <h1 className='font-semibold'>Steven Madec</h1>
 
       <br />
 

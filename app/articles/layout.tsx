@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: {
     default: 'Articles',
-    template: '%s | Articles | John Smith'
+    template: '%s | Articles | Steven Madec'
   },
   description: 'Découvrez mes derniers articles sur le développement web, JavaScript, CSS et les outils de développement.',
 };

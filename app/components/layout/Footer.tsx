@@ -7,7 +7,7 @@ export default function Footer() {
       role="contentinfo"
     >
       <div className="text-sm flex-1 text-left text-gray-500 dark:text-gray-600 space-y-2">
-        <p>© {currentYear} John Smith. </p>
+        <p>© {currentYear} Steven Madec. </p>
       </div>
     </footer>
   )
