@@ -10,12 +10,17 @@ export const metadata: Metadata = {
 export default function JavaScriptPatternsPage() {
   return (
     <article className="prose prose-neutral dark:prose-invert max-w-none">
-      <h1>6 Sneaky JavaScript Patterns to Cut Boilerplate</h1>
+      <h1 className='text-xl font-semibold text-neutral-400 dark:text-white'>6 Sneaky JavaScript Patterns to Cut Boilerplate</h1>
       
       <br />
       
-      <p>Micro-optimizations and quality-of-life hacks to keep your scripts lean, readable, and bug-resistant.</p>
-      
+      <p className='text-neutral-400'>Micro-optimizations and quality-of-life hacks to keep your scripts lean, readable, and bug-resistant.</p>
+      <br />
+
+      <hr />
+
+      <br />
+
       <h2><strong>Optional Chaining <code>?.</code> + Nullish Coalescing <code>??</code></strong></h2>
       
       <p>Stop writing five nested guards:</p>
@@ -30,7 +35,12 @@ const theme = user?.settings?.theme ?? 'light';`}</code></pre>
       
       <p>Fewer lines, same safety.</p>
       
+      <br />
+
       <hr />
+
+      <br />
+
       
       <h2><strong>Barrel Files for One-Line Imports</strong></h2>
       
@@ -46,7 +56,12 @@ import { formatDate, validateEmail, getJSON } from '@/utils';`}</code></pre>
       
       <p>Kill import clutter without sacrificing tree-shaking.</p>
       
+      <br />
+
       <hr />
+
+      <br />
+
       
       <h2><strong>Memoize Pure Functions with a <code>WeakMap</code></strong></h2>
       
@@ -63,7 +78,12 @@ export function expensive(obj) {
       
       <p>Results follow the object's lifetime—GC does the cleanup.</p>
       
+      <br />
+
       <hr />
+
+      <br />
+
       
       <h2><strong>Tagged Template Literals for Safe HTML</strong></h2>
       
@@ -91,7 +111,12 @@ document.body.innerHTML = escape\`<p>Hello, \${name}!</p>\`;`}</code></pre>
       
       <p>Zero dependencies, maximum safety.</p>
       
+      <br />
+
       <hr />
+
+      <br />
+
       
       <h2><strong><code>AbortController</code> for Cancellable <code>fetch</code></strong></h2>
       
@@ -111,7 +136,12 @@ controller.abort();`}</code></pre>
       
       <p>No more "state update on unmounted component" warnings.</p>
       
+      <br />
+
       <hr />
+
+      <br />
+
       
       <h2><strong>Format Like a Native with <code>Intl</code></strong></h2>
       
@@ -126,6 +156,7 @@ const isoDate = new Intl.DateTimeFormat('sv-SE').format(new Date());
 // "2025-06-05"`}</code></pre>
       
       <p>Locale-aware, performant, and zero bloat.</p>
+      <br />
     </article>
   );
 }

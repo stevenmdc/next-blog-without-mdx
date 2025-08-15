@@ -1,23 +1,20 @@
+// This is a Next.js 13+ app directory example 
+// app/page.tsx
+
 'use client'
 
 import { motion } from 'framer-motion'
 import { SocialLinks } from './components/ui/SocialLinks'
 import { SelectedProjects } from './components/ui/SelectedProjects'
 
-const fadeInUp = {
-  initial: { opacity: 0, y: 60 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.1, ase: "easein" }
-}
 
 export default function HomePage() {
   return (
     <div className='prose prose-neutral dark:prose-invert max-w-none'>
       <motion.div
-        initial="initial"
-        animate="animate"
-        variants={fadeInUp}
-        transition={{ delay: 0 }}
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
       >
         <h1 className='font-semibold'>Steven Madec</h1>
         <br />
@@ -41,10 +38,9 @@ export default function HomePage() {
 
       <motion.div
         className='mt-8'
-        initial="initial"
-        animate="animate"
-        variants={fadeInUp}
-        transition={{ delay: 0.2 }}
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
       >
         <h2 className='font-semibold'>Selected Projects</h2>
         <SelectedProjects />
@@ -52,10 +48,9 @@ export default function HomePage() {
 
       <motion.div
         className='mt-8'
-        initial="initial"
-        animate="animate"
-        variants={fadeInUp}
-        transition={{ delay: 0.3 }}
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
       >
         <h2 className='font-semibold'>Articles récents</h2>
         <ul className='space-y-3 mt-2 text-neutral-400'>
@@ -84,10 +79,9 @@ export default function HomePage() {
 
       <motion.div
         className='mt-8'
-        initial="initial"
-        animate="animate"
-        variants={fadeInUp}
-        transition={{ delay: 0.4 }}
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
       >
         <h2 className='font-semibold'>Stack</h2>
         <ul className='p-4 space-y-3 text-neutral-400'>
@@ -100,10 +94,9 @@ export default function HomePage() {
 
       <motion.div
         className='mt-8'
-        initial="initial"
-        animate="animate"
-        variants={fadeInUp}
-        transition={{ delay: 0.5 }}
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.6 }}
       >
         <h2 className='font-semibold'>Code</h2>
         <ul className='space-y-3 p-4 text-neutral-400'>
@@ -132,10 +125,9 @@ export default function HomePage() {
 
       <motion.div
         className='mt-8'
-        initial="initial"
-        animate="animate"
-        variants={fadeInUp}
-        transition={{ delay: 0.6 }}
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.7 }}
       >
         <h2 className='font-semibold'>Connect</h2>
         <ul className='space-y-3 p-4 text-neutral-400'>

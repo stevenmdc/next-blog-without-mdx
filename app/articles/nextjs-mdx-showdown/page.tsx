@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 export default function NextjsMdxShowdownPage() {
   return (
     <article className="prose prose-neutral dark:prose-invert max-w-none">
-      <h1>Next.js Blog: MDX vs. Raw React Components</h1>
+      <h1 className='text-xl font-semibold text-neutral-400 dark:text-white'>Next.js Blog: MDX vs. Raw React Components</h1>
       
       <br />
-      <p>Pour construire un blog avec Next.js, vous avez deux options principales : la voie centrée sur le contenu avec MDX, ou l'approche traditionnelle des composants React. Voici une analyse directe de chacune.</p>
+      <p className='text-neutral-400'>Pour construire un blog avec Next.js, vous avez deux options principales : la voie centrée sur le contenu avec MDX, ou l'approche traditionnelle des composants React. Voici une analyse directe de chacune.</p>
       
       <br />
       <hr />

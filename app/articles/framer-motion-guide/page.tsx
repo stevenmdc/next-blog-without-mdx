@@ -11,10 +11,15 @@ export default function FramerMotionGuidePage() {
   return (
     <>
       <article className="prose prose-neutral dark:prose-invert max-w-none">
-        <h1 className='text-xl font-bold'>Framer Motion Guide</h1>
+        <h1 className='text-xl font-semibold text-neutral-400 dark:text-white'>Framer Motion Guide</h1>
         
         <p className='text-neutral-400'>Master the art of animations in React with Framer Motion.</p>
         <br />
+
+      <hr />
+
+      <br />
+
         
         <h2><strong>Getting Started</strong></h2>
         

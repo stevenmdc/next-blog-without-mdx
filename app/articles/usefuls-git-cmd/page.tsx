@@ -1,52 +1,116 @@
-import React from "react";
+// app/articles/usefuls-git-cmd/page.tsx
+import type { Metadata } from 'next';
 
-const gitCommands = [
-    {
-        description: "List all files except node_modules and .next (tree-like)",
-        command: `find . -not -path "./node_modules*" -not -path "./.next*" -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'`,
-    },
-    {
-        description: "Show commit history (one line per commit)",
-        command: "git log --oneline",
-    },
-    {
-        description: "Show branches (local and remote)",
-        command: "git branch -a",
-    },
-    {
-        description: "Show files changed in last commit",
-        command: "git show --name-only",
-    },
-    {
-        description: "Find commits that changed a specific file",
-        command: "git log -- <filename>",
-    },
-    {
-        description: "Search for a string in all tracked files",
-        command: "git grep <pattern>",
-    },
-    {
-        description: "Show current status",
-        command: "git status",
-    },
-    {
-        description: "Show last 5 commits with stats",
-        command: "git log -5 --stat",
-    },
-];
+export const metadata: Metadata = {
+  title: "Useful Git Commands You Should Know",
+  alternates: {
+    canonical: '/articles/useful-git-cmd',
+  },
+};
 
 export default function UsefulGitCmdPage() {
-    return (
-        <main className="max-w-2xl mx-auto p-6">
-            <h1 className="text-2xl font-bold mb-4">Useful Git Commands</h1>
-            <ul className="space-y-6">
-                {gitCommands.map((cmd, idx) => (
-                    <li key={idx} className="border rounded p-4 bg-gray-50">
-                        <div className="font-semibold mb-2">{cmd.description}</div>
-                        <pre className="bg-gray-200 p-2 rounded text-sm overflow-x-auto">{cmd.command}</pre>
-                    </li>
-                ))}
-            </ul>
-        </main>
-    );
+  return (
+    <article className="prose prose-neutral dark:prose-invert max-w-none">
+      <h1 className='text-xl font-semibold text-neutral-400 dark:text-white'>Useful Git Commands You Should Know</h1>
+      
+      <br />
+      
+      <p className='text-neutral-400'>A collection of essential Git commands to streamline your version control workflow.</p>
+      
+      <h2><strong>List all files (excluding node_modules and .next)</strong></h2>
+      
+      <p>Get a tree-like view of your project structure without the clutter:</p>
+      
+      <pre><code className="language-bash">find . -not -path "./node_modules*" -not -path "./.next*" -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'</code></pre>
+      
+      <br />
+
+      <hr />
+      
+      <br />
+
+      <h2><strong>Condensed commit history</strong></h2>
+      
+      <p>See your commit history in a compact one-line format:</p>
+      
+      <pre><code className="language-bash">git log --oneline</code></pre>
+      
+      <br />
+
+      <hr />
+      
+      <br />
+          
+      <h2><strong>View all branches at a glance</strong></h2>
+      
+      <p>List both local and remote branches in one command:</p>
+      
+      <pre><code className="language-bash">git branch -a</code></pre>
+      
+      <br />
+
+      <hr />
+      
+      <br />
+      
+      <h2><strong>Inspect recent changes</strong></h2>
+      
+      <p>See what files were modified in the last commit:</p>
+      
+      <pre><code className="language-bash">git show --name-only</code></pre>
+      
+      <br />
+
+      <hr />
+      
+      <br />
+      
+      <h2><strong>Trace changes to a specific file</strong></h2>
+      
+      <p>Find all commits that affected a particular file:</p>
+      
+      <pre><code className="language-bash">git log -- filename</code></pre>
+      
+      <hr />
+      
+      <h2><strong>Search across your codebase</strong></h2>
+      
+      <p>Find text patterns in all tracked files:</p>
+      
+      <pre><code className="language-bash">git grep "pattern"</code></pre>
+      
+      <br />
+
+      <hr />
+      
+      <br />
+      
+      <h2><strong>Quick status check</strong></h2>
+      
+      <p>See your current branch and changes at any time:</p>
+      
+      <pre><code className="language-bash">git status</code></pre>
+      
+      <br />
+
+      <hr />
+      
+      <br />
+      
+      <h2><strong>Detailed recent activity</strong></h2>
+      
+      <p>View the last 5 commits with file change statistics:</p>
+      
+      <pre><code className="language-bash">git log -5 --stat</code></pre>
+      <br />
+
+      <hr />
+      
+      <br />
+      
+      <blockquote>
+        <p>💡 <em>Pro-tip:</em> Add <code>--graph</code> to visualize branch history.</p>
+      </blockquote>
+    </article>
+  );
 }
