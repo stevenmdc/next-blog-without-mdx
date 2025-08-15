@@ -1,4 +1,4 @@
-// This is a Next.js 13+ app directory example 
+// This is a Next.js 13+ app directory example
 // app/page.tsx
 
 'use client'
@@ -7,16 +7,14 @@ import { motion } from 'framer-motion'
 import { SocialLinks } from './components/ui/SocialLinks'
 import { SelectedProjects } from './components/ui/SelectedProjects'
 
-
 export default function HomePage() {
   return (
     <div className='prose prose-neutral dark:prose-invert max-w-none'>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
-      >
-        <h1 className='font-semibold'>Steven Madec</h1>
+        transition={{ duration: 0.5, delay: 0.2 }}>
+        <h1 className='font-semibold'>John Smith</h1>
         <br />
         <p className='text-neutral-400'>
           This is my portfolio, blog, and personal website.
@@ -25,7 +23,8 @@ export default function HomePage() {
           I'm a software engineer based in San Francisco, CA. I love building
           things that live on the internet.
           <br />
-          I'm currently working at <a href='https://vercel.com'>Vercel</a> on the
+          I'm currently working at <a href='https://vercel.com'>Vercel</a> on
+          the
           <a
             href='https://nextjs.org'
             className='hover:underline hover:text-blue-500'>
@@ -40,8 +39,7 @@ export default function HomePage() {
         className='mt-8'
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.3 }}
-      >
+        transition={{ duration: 0.5, delay: 0.3 }}>
         <h2 className='font-semibold'>Selected Projects</h2>
         <SelectedProjects />
       </motion.div>
@@ -50,8 +48,7 @@ export default function HomePage() {
         className='mt-8'
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.4 }}
-      >
+        transition={{ duration: 0.5, delay: 0.4 }}>
         <h2 className='font-semibold'>Articles récents</h2>
         <ul className='space-y-3 mt-2 text-neutral-400'>
           <li className='rounded-md hover:bg-neutral-400/20 hover:text-white'>
@@ -81,8 +78,7 @@ export default function HomePage() {
         className='mt-8'
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.5 }}
-      >
+        transition={{ duration: 0.5, delay: 0.5 }}>
         <h2 className='font-semibold'>Stack</h2>
         <ul className='p-4 space-y-3 text-neutral-400'>
           <li>• Next.js / React</li>
@@ -96,8 +92,7 @@ export default function HomePage() {
         className='mt-8'
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.6 }}
-      >
+        transition={{ duration: 0.5, delay: 0.6 }}>
         <h2 className='font-semibold'>Code</h2>
         <ul className='space-y-3 p-4 text-neutral-400'>
           <li>
@@ -127,8 +122,7 @@ export default function HomePage() {
         className='mt-8'
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.7 }}
-      >
+        transition={{ duration: 0.5, delay: 0.7 }}>
         <h2 className='font-semibold'>Connect</h2>
         <ul className='space-y-3 p-4 text-neutral-400'>
           <li>

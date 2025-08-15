@@ -2,20 +2,20 @@ export function SocialLinks() {
   const socialLinks = [
     {
       name: 'Twitter',
-      handle: '@stevenmadec',
-      url: 'https://x.com/stevenmadec',
+      handle: '@johnsmith',
+      url: 'https://x.com/johnsmith',
       ariaLabel: 'Suivez-moi sur Twitter',
     },
     {
       name: 'YouTube',
       handle: 'youtube',
-      url: 'https://www.youtube.com/@stevenmadec',
+      url: 'https://www.youtube.com/@johnsmith',
       ariaLabel: 'Visitez ma chaîne YouTube',
     },
     {
       name: 'LinkedIn',
       handle: 'linkedin',
-      url: 'https://www.linkedin.com/in/stevenmadec',
+      url: 'https://www.linkedin.com/in/johnsmith',
       ariaLabel: 'Connectons-nous sur LinkedIn',
     },
     {
