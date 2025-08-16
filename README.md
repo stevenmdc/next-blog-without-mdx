@@ -1,15 +1,17 @@
-# Next.js Blog Template (Without MDX)
+# Next.js Portfolio / Blog Template (Without MDX)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fstevenmdc%2Fnext-blog-without-mdx)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fstevenmdc%2Fnext-noir-portfolio)
 
-A clean portfolio/blog template built with modern web technologies.
+A modern and clean portfolio/blog template built with modern web technologies.
 
 ## Features
 
-**Next.js** - React framework for server-rendered applications
-**Tailwind CSS** - Utility-first CSS framework
-**Vercel Analytics** - Built-in performance tracking
-**Vercel Deployment** - One-click deployment
+- **Next.js** - React framework for server-rendered applications
+- **Tailwind CSS** - Utility-first CSS framework
+- **Framer-motion** - Smooth Animation
+- **Vercel Analytics** - Built-in performance tracking
+- **Vercel Deployment** - One-click deployment
+
 
 ## Tech Stack
 
@@ -30,8 +32,8 @@ A clean portfolio/blog template built with modern web technologies.
 This application requires Node.js v22+.
 
 ```bash
-git clone https://github.com/stevenmdc/next-blog-without-mdx.git
-cd next-mdx-blog
+git clone https://github.com/stevenmdc/next-noir-portfolio.git
+cd next-noir-portfolio
 yarn install
 yarn dev
 ```

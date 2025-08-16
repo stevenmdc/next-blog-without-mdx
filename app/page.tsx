@@ -107,9 +107,9 @@ export default function HomePage() {
           </li>
           <li>
             <a
-              href='https://github.com/stevenmdc/next-portfolio-without-mdx'
+              href='https://github.com/stevenmdc/next-noir-portfolio'
               className='group hover:text-blue-500  transition-all duration-200 hover:scale-105'>
-              • next-portfolio-without-mdx
+              • next-noir-portfolio
               <span className='group-hover:opacity-100 font-light opacity-0 transition-opacity duration-200 ml-1'>
                 ↗
               </span>
