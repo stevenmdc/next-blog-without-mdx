@@ -95,7 +95,7 @@ function Box() {
   hidden: { 
     opacity: 0, 
     scale: 0.5,
-    y: 50
+    y: 25
   },
   visible: { 
     opacity: 1, 
@@ -144,7 +144,7 @@ function AnimatedBox() {
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 }
+  visible: { opacity: 1 , y: 0, filter: "blur(0px)"  }
 };
 
 function StaggeredList() {
@@ -268,8 +268,8 @@ function ScrollTriggered() {
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 50 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      initial={{ opacity: 0 , y: 25, filter: "blur(10px)"  }}
+      animate={isInView ? { opacity: 1 , y: 0, filter: "blur(0px)"  } : {}}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       I animate when scrolled into view!
@@ -307,7 +307,7 @@ const variants = {
         <pre><code className="language-js">{`// Fade in up
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
-  animate: { opacity: 1, y: 0 },
+  animate: { opacity: 1 , y: 0, filter: "blur(0px)"  },
   transition: { duration: 0.6, ease: "easeOut" }
 };
 

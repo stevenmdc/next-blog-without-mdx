@@ -11,8 +11,8 @@ export default function HomePage() {
   return (
     <div className='prose prose-neutral dark:prose-invert max-w-none'>
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 , y: 25, filter: "blur(10px)" }}
+        animate={{ opacity: 1 , y: 0, filter: "blur(0px)" }}
         transition={{ duration: 0.5, delay: 0.2 }}>
         <h1 className='font-semibold'>John Smith</h1>
         <br />
@@ -37,8 +37,8 @@ export default function HomePage() {
 
       <motion.div
         className='mt-8'
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 , y: 25, filter: "blur(10px)"  }}
+        animate={{ opacity: 1 , y: 0, filter: "blur(0px)"  }}
         transition={{ duration: 0.5, delay: 0.3 }}>
         <h2 className='font-semibold'>Selected Projects</h2>
         <SelectedProjects />
@@ -46,8 +46,8 @@ export default function HomePage() {
 
       <motion.div
         className='mt-8'
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 , y: 25, filter: "blur(10px)"  }}
+        animate={{ opacity: 1 , y: 0, filter: "blur(0px)"  }}
         transition={{ duration: 0.5, delay: 0.4 }}>
         <h2 className='font-semibold'>Articles récents</h2>
         <ul className='space-y-3 mt-2 text-neutral-400'>
@@ -76,8 +76,8 @@ export default function HomePage() {
 
       <motion.div
         className='mt-8'
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 , y: 25, filter: "blur(10px)"  }}
+        animate={{ opacity: 1 , y: 0, filter: "blur(0px)"  }}
         transition={{ duration: 0.5, delay: 0.5 }}>
         <h2 className='font-semibold'>Stack</h2>
         <ul className='p-4 space-y-3 text-neutral-400'>
@@ -90,8 +90,8 @@ export default function HomePage() {
 
       <motion.div
         className='mt-8'
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 , y: 25, filter: "blur(10px)"  }}
+        animate={{ opacity: 1 , y: 0, filter: "blur(0px)"  }}
         transition={{ duration: 0.5, delay: 0.6 }}>
         <h2 className='font-semibold'>Code</h2>
         <ul className='space-y-3 p-4 text-neutral-400'>
@@ -120,8 +120,8 @@ export default function HomePage() {
 
       <motion.div
         className='mt-8'
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 , y: 25, filter: "blur(10px)"  }}
+        animate={{ opacity: 1 , y: 0, filter: "blur(0px)"  }}
         transition={{ duration: 0.5, delay: 0.7 }}>
         <h2 className='font-semibold'>Connect</h2>
         <ul className='space-y-3 p-4 text-neutral-400'>
